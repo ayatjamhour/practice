@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+ <title>first</title>
+ <link rel="stylesheet" href="addpage.css">
+ </head>
+ <body>
+    <div class="nav" id="nav">
+        <img src="images/netflix-logo.png" class="logo" onclick="window.location.href='index.html';"/>
+        <img src="images/netflix-avatar.png" class="avatar" />
+    </div>
+    <div class="movie_page">
+        
+    
+      </div>
+      <h2 style="margin-top:100px ; color:red">_____________________________________________________________________________________________________________________________________________________________________</h2>
+      <p class="movie_disc" ><img src="images/a8.jpg" alt="" class="movie1">
+        <h3 style="padding:40px;color:white;     margin-right: 150px;
+        font-size: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            temporibus suscipit nihil ipsum beatae veritatis magnam reiciendis
+             architecto error consequatur libero atque earum, ut voluptatum 
+             qui repudiandae corporis, itaque molestias.</h3></p>
+             <h2 style="color:red">_____________________________________________________________________________________________________________________________________________________________________</h2>
+      <script>
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () =>{
+            if(window.scrollY >= 100){
+                nav.classList.add('nav__b')
+            }
+            else {
+                nav.classList.remove('nav__b')
+            }
+        })
+        </script>
+    
+    </body>

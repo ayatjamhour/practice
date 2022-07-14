@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+}
+.nav {
+    top:0;
+    display : flex ;
+    width:100%;
+    transition-timing-function: ease-in ;
+    transition: all 0.5s ;
+    padding: 20px;
+    justify-content: space-between ;
+    position: fixed;
+    z-index : 1;
+
+}
+.nav__b {
+
+    background-color: #111;
+}
+.logo {
+    object-fit: contain ;
+    width: 82px;
+
+}
+.avatar {
+    object-fit: contain ;
+    width: 32px;
+}
+.banner1 {
+ background-image: url('images/banner11.jpg');
+ background-position: center  center;
+ background-size: cover;
+ color: white;
+ height: 380px;
+ object-fit: contain;
+
+}
+.banner1_content {
+    margin-left: 30px;
+    height: 180px;
+    padding-top: 120px ;
+}
+.banner1_disc {
+    height: 160px ;
+    line-height: 1.3;
+    width: 50rem;
+    max-width: 380px;
+    padding-top: 1rem;
+    font-size: 1rem;
+
+}
+.banner1_title {
+    font-weight: 790;
+    font-size: 2.5rem;
+    padding-bottom: 0.4rem;
+}
+.banner1_button {
+    margin-right: 1rem;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 0.5rem ;
+    padding-bottom: 0.5rem;
+    color:#fff ;
+    background-color: rgba(52, 52, 52, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.21vw;
+    font-weight: 710;
+}
+.ban_fadebottom {
+    background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.6) , #111);
+    margin: 190px ;
+    height: 8rem;
+}
+.banner1_button:hover {
+    background-color: #e6e6e6;
+    color : #000 ;
+    transition: all 0.2s;
+}
+.row{
+    margin:25px;
+    color: white;
+}
+.row_movies {
+    padding: 25px;
+    overflow-y: hidden;
+    display: flex;
+    overflow-x: scroll;
+}
+.movies {
+    margin-right: 11px;
+    object-fit: contain;
+    max-height: 100px;
+    transition: transform 450ms;
+    width:100% ;
+}
+.movies:hover {
+    transform: scale(1.04);
+}
+.row_movies::-webkit-scrollbar {
+    /* margin-right: 1rem;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 0.5rem ;
+    padding-bottom: 0.5rem; */
+    color:#fff ;
+    background-color: rgba(38, 39, 39, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    /* border-radius: 0.21vw;
+    font-weight: 710; */
+    
+}
+.large_movies {
+   max-height: 200px; 
+}
+.large_movies:hover {
+    transform: scale(1.10);
+}
+.small_movies {
+    max-height: 120px;
+}
